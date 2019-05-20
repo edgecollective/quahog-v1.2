@@ -498,31 +498,20 @@ F 3 "" H 10000 2450 50  0001 C CNN
 	1    10000 2450
 	1    0    0    -1  
 $EndComp
-$Comp
-L hog32a-rescue:Conn_01x02 J3
-U 1 1 5B89258D
-P 1500 1050
-F 0 "J3" H 1500 1150 50  0000 C CNN
-F 1 "VINS" H 1500 850 50  0000 C CNN
-F 2 "TerminalBlocks_Phoenix:TerminalBlock_Phoenix_PT-3.5mm_2pol" H 1500 1050 50  0001 C CNN
-F 3 "" H 1500 1050 50  0001 C CNN
-	1    1500 1050
-	1    0    0    -1  
-$EndComp
-Text GLabel 1300 1150 0    60   Input ~ 0
+Text GLabel 10450 3450 2    60   Input ~ 0
 VIN
 $Comp
 L hog32a-rescue:GND #PWR024
 U 1 1 5B89266B
-P 1000 1050
-F 0 "#PWR024" H 1000 800 50  0001 C CNN
-F 1 "GND" H 1000 900 50  0000 C CNN
-F 2 "" H 1000 1050 50  0001 C CNN
-F 3 "" H 1000 1050 50  0001 C CNN
-	1    1000 1050
+P 10550 3800
+F 0 "#PWR024" H 10550 3550 50  0001 C CNN
+F 1 "GND" H 10550 3650 50  0000 C CNN
+F 2 "" H 10550 3800 50  0001 C CNN
+F 3 "" H 10550 3800 50  0001 C CNN
+	1    10550 3800
 	1    0    0    -1  
 $EndComp
-Text Notes 1100 800  0    60   ~ 0
+Text Notes 10050 3350 0    60   ~ 0
 Power In
 $Comp
 L hog32a-rescue:R R5
@@ -724,28 +713,17 @@ Text GLabel 9500 5400 0    60   Input ~ 0
 DIO4
 Text GLabel 9500 5500 0    60   Input ~ 0
 DIO3
-$Comp
-L hog32a-rescue:Conn_02x03_Odd_Even J16
-U 1 1 5B91ABB9
-P 10400 5350
-F 0 "J16" H 10450 5550 50  0000 C CNN
-F 1 "LBO" H 10450 5150 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x03_Pitch2.54mm" H 10400 5350 50  0001 C CNN
-F 3 "" H 10400 5350 50  0001 C CNN
-	1    10400 5350
-	0    -1   -1   0   
-$EndComp
 Text GLabel 10300 5050 1    60   Input ~ 0
 32
-Text GLabel 10400 5050 1    60   Input ~ 0
-25
 Text GLabel 10500 5050 1    60   Input ~ 0
+25
+Text GLabel 10700 5050 1    60   Input ~ 0
 27
-Text GLabel 10300 5550 3    60   Input ~ 0
+Text GLabel 10400 5050 1    60   Input ~ 0
 33
-Text GLabel 10400 5550 3    60   Input ~ 0
+Text GLabel 10600 5050 1    60   Input ~ 0
 26
-Text GLabel 10500 5550 3    60   Input ~ 0
+Text GLabel 10800 5050 1    60   Input ~ 0
 DIO5
 Text GLabel 6200 1800 0    60   Input ~ 0
 34
@@ -998,8 +976,6 @@ Wire Wire Line
 Connection ~ 1350 3050
 Connection ~ 1350 3650
 Wire Wire Line
-	1000 1050 1300 1050
-Wire Wire Line
 	950  7000 950  7200
 Wire Wire Line
 	1300 7000 1300 7200
@@ -1076,7 +1052,7 @@ U 1 1 5CE208F0
 P 5650 3550
 F 0 "Q2" V 5978 3550 50  0000 C CNN
 F 1 "Q_PNP_BCE" V 5887 3550 50  0000 C CNN
-F 2 "" H 5850 3650 50  0001 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5850 3650 50  0001 C CNN
 F 3 "~" H 5650 3550 50  0001 C CNN
 	1    5650 3550
 	0    1    -1   0   
@@ -1204,7 +1180,7 @@ U 1 1 5CE4ADCA
 P 3150 3900
 F 0 "BT1" H 2850 3950 50  0000 L CNN
 F 1 "Battery_Cell" H 2650 3850 50  0000 L CNN
-F 2 "dwb:cr1220" V 3150 3960 50  0001 C CNN
+F 2 "Battery:BatteryHolder_Keystone_3000_1x12mm" V 3150 3960 50  0001 C CNN
 F 3 "~" V 3150 3960 50  0001 C CNN
 	1    3150 3900
 	1    0    0    -1  
@@ -1346,12 +1322,36 @@ Wire Wire Line
 $Comp
 L Connector:Barrel_Jack_Switch J18
 U 1 1 5CED6D12
-P -500 1100
-F 0 "J18" H -445 1417 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H -445 1326 50  0000 C CNN
-F 2 "dwb:barrel_5.5" H -450 1060 50  0001 C CNN
-F 3 "~" H -450 1060 50  0001 C CNN
-	1    -500 1100
+P 10000 3800
+F 0 "J18" H 10055 4117 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 10055 4026 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 10050 3760 50  0001 C CNN
+F 3 "~" H 10050 3760 50  0001 C CNN
+	1    10000 3800
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10550 3800 10400 3800
+Wire Wire Line
+	10300 3900 10400 3900
+Wire Wire Line
+	10400 3900 10400 3800
+Connection ~ 10400 3800
+Wire Wire Line
+	10400 3800 10300 3800
+Wire Wire Line
+	10450 3700 10450 3450
+Wire Wire Line
+	10450 3700 10300 3700
+$Comp
+L Connector:Conn_01x06_Female J?
+U 1 1 5CE353BC
+P 10600 5250
+F 0 "J?" V 10447 5498 50  0000 L CNN
+F 1 "Conn_01x06_Female" V 10538 5498 50  0000 L CNN
+F 2 "" H 10600 5250 50  0001 C CNN
+F 3 "~" H 10600 5250 50  0001 C CNN
+	1    10600 5250
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
