@@ -569,8 +569,6 @@ F 3 "" H 3000 7100 50  0001 C CNN
 	1    3000 7100
 	1    0    0    -1  
 $EndComp
-Text GLabel 3000 6800 0    60   Input ~ 0
-VIN
 Text GLabel 7250 5050 0    60   Input ~ 0
 26
 Text GLabel 7250 5150 0    60   Input ~ 0
@@ -736,19 +734,6 @@ Text GLabel 6200 1900 0    60   Input ~ 0
 35
 Text GLabel 10600 2050 0    60   Input ~ 0
 0
-Text GLabel 10600 2650 0    60   Input ~ 0
-VIN
-$Comp
-L hog32a-rescue:+5V #PWR036
-U 1 1 5B927367
-P 10150 2550
-F 0 "#PWR036" H 10150 2400 50  0001 C CNN
-F 1 "+5V" H 10150 2690 50  0000 C CNN
-F 2 "" H 10150 2550 50  0001 C CNN
-F 3 "" H 10150 2550 50  0001 C CNN
-	1    10150 2550
-	1    0    0    -1  
-$EndComp
 Text GLabel 9100 1300 2    60   Input ~ 0
 22
 NoConn ~ 900  3150
@@ -799,8 +784,6 @@ F 3 "" H 3200 6900 50  0001 C CNN
 	1    3200 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10600 2550 10150 2550
 Wire Wire Line
 	1150 3450 750  3450
 Wire Wire Line
@@ -1135,8 +1118,6 @@ F 3 "" H 5600 2200 50  0001 C CNN
 	1    5600 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 6200 2500 0    60   Input ~ 0
-VIN
 $Comp
 L hog32a-rescue:+5V #PWR0105
 U 1 1 5CE67362
@@ -1169,17 +1150,6 @@ Wire Wire Line
 	10600 2450 10000 2450
 Wire Wire Line
 	10600 2350 9850 2350
-$Comp
-L Connector:Conn_01x12_Female J17
-U 1 1 5CEA2EDB
-P 10800 2050
-F 0 "J17" H 10827 2026 50  0000 L CNN
-F 1 "Conn_01x12_Female" V 10950 1700 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 10800 2050 50  0001 C CNN
-F 3 "~" H 10800 2050 50  0001 C CNN
-	1    10800 2050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x09_Female J14
 U 1 1 5CEA3175
@@ -1333,7 +1303,7 @@ U 1 1 5CE4BD25
 P 1350 2350
 F 0 "C2" H 1232 2304 50  0000 R CNN
 F 1 "22uF" H 1232 2395 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1388 2200 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1388 2200 50  0001 C CNN
 F 3 "~" H 1350 2350 50  0001 C CNN
 	1    1350 2350
 	-1   0    0    1   
@@ -1344,7 +1314,7 @@ U 1 1 5CE4C03D
 P 1350 2050
 F 0 "C1" H 1468 2096 50  0000 L CNN
 F 1 "10uF" H 1468 2005 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1388 1900 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1388 1900 50  0001 C CNN
 F 3 "~" H 1350 2050 50  0001 C CNN
 	1    1350 2050
 	1    0    0    -1  
@@ -1376,7 +1346,7 @@ U 1 1 5CE5612A
 P 1350 3500
 F 0 "C6" H 1232 3454 50  0000 R CNN
 F 1 "22uF" H 1232 3545 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1388 3350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1388 3350 50  0001 C CNN
 F 3 "~" H 1350 3500 50  0001 C CNN
 	1    1350 3500
 	-1   0    0    1   
@@ -1393,7 +1363,7 @@ U 1 1 5CE561C0
 P 1350 3200
 F 0 "C5" H 1468 3246 50  0000 L CNN
 F 1 "10uF" H 1468 3155 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1388 3050 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1388 3050 50  0001 C CNN
 F 3 "~" H 1350 3200 50  0001 C CNN
 	1    1350 3200
 	1    0    0    -1  
@@ -1402,25 +1372,42 @@ Connection ~ 1350 3050
 Wire Wire Line
 	1350 3050 2250 3050
 $Comp
-L Device:CP C?
+L Device:CP C3
 U 1 1 5CE56B2E
 P 1250 5500
-F 0 "C?" H 1368 5546 50  0000 L CNN
+F 0 "C3" H 1368 5546 50  0000 L CNN
 F 1 "1uF" H 1368 5455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 1288 5350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1288 5350 50  0001 C CNN
 F 3 "~" H 1250 5500 50  0001 C CNN
 	1    1250 5500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C?
+L Device:CP C4
 U 1 1 5CE57007
 P 2200 5500
-F 0 "C?" H 2318 5546 50  0000 L CNN
+F 0 "C4" H 2318 5546 50  0000 L CNN
 F 1 "1uF" H 2318 5455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 2238 5350 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2238 5350 50  0001 C CNN
 F 3 "~" H 2200 5500 50  0001 C CNN
 	1    2200 5500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3000 6800 0    60   Input ~ 0
+V_SWITCH
+Text GLabel 6200 2500 0    60   Input ~ 0
+V_SWITCH
+Text GLabel 10600 2550 0    60   Input ~ 0
+V_SWITCH
+$Comp
+L Connector:Conn_01x11_Female J?
+U 1 1 5CE6122B
+P 10800 2050
+F 0 "J?" H 10827 2076 50  0000 L CNN
+F 1 "Conn_01x11_Female" H 10827 1985 50  0000 L CNN
+F 2 "" H 10800 2050 50  0001 C CNN
+F 3 "~" H 10800 2050 50  0001 C CNN
+	1    10800 2050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
