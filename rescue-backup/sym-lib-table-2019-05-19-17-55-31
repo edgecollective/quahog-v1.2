@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name hog32a-rescue)(type Legacy)(uri ${KIPRJMOD}/hog32a-rescue.lib)(options "")(descr ""))
+)
