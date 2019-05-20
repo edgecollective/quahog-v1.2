@@ -370,7 +370,7 @@ F 3 "" H 1800 7150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 2050 6500 0    60   ~ 0
-i2c-a
+i2c-display\n
 $Comp
 L hog32a-rescue:+3V3 #PWR017
 U 1 1 5B88CFF6
@@ -1133,7 +1133,7 @@ F 3 "" H 5250 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 4250 4850 4250
+	5050 4250 4950 4250
 $Comp
 L Connector:Conn_01x02_Female J8
 U 1 1 5CE2EBFC
@@ -1354,4 +1354,73 @@ F 3 "~" H 10600 5250 50  0001 C CNN
 	1    10600 5250
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:Conn_01x02_Male J16
+U 1 1 5CE314F3
+P 4500 3100
+F 0 "J16" H 4606 3278 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 4100 3050 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 3100 50  0001 C CNN
+F 3 "~" H 4500 3100 50  0001 C CNN
+	1    4500 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4700 2850 0    60   Input ~ 0
+RESET
+Wire Wire Line
+	4700 3100 4700 2850
+Wire Wire Line
+	4950 3750 4700 3750
+Wire Wire Line
+	4700 3750 4700 3200
+Wire Wire Line
+	4950 3750 4950 4250
+Connection ~ 4950 4250
+Wire Wire Line
+	4950 4250 4850 4250
+$Comp
+L Connector:Screw_Terminal_01x04 J19
+U 1 1 5CE40CFD
+P 3350 5900
+F 0 "J19" H 3430 5892 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 3430 5801 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal" H 3350 5900 50  0001 C CNN
+F 3 "~" H 3350 5900 50  0001 C CNN
+	1    3350 5900
+	1    0    0    -1  
+$EndComp
+Text GLabel 3150 5800 0    60   Input ~ 0
+2:SDA
+Text GLabel 3150 5900 0    60   Input ~ 0
+14:SCL
+$Comp
+L hog32a-rescue:GND #PWR0107
+U 1 1 5CE40FA5
+P 3000 6200
+F 0 "#PWR0107" H 3000 5950 50  0001 C CNN
+F 1 "GND" H 3000 6050 50  0000 C CNN
+F 2 "" H 3000 6200 50  0001 C CNN
+F 3 "" H 3000 6200 50  0001 C CNN
+	1    3000 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L hog32a-rescue:+3V3 #PWR0108
+U 1 1 5CE41008
+P 2600 6100
+F 0 "#PWR0108" H 2600 5950 50  0001 C CNN
+F 1 "+3V3" H 2600 6240 50  0000 C CNN
+F 2 "" H 2600 6100 50  0001 C CNN
+F 3 "" H 2600 6100 50  0001 C CNN
+	1    2600 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6000 3000 6000
+Wire Wire Line
+	3000 6000 3000 6200
+Wire Wire Line
+	2600 6100 3150 6100
+Text Notes 3050 5600 0    60   ~ 0
+i2c-ext\n
 $EndSCHEMATC
