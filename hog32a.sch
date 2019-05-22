@@ -537,8 +537,6 @@ F 3 "" H 2000 3650 50  0001 C CNN
 	1    2000 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 10600 1550 0    60   Input ~ 0
-23
 $Comp
 L hog32a-rescue:+3V3 #PWR032
 U 1 1 5B89AA80
@@ -657,7 +655,7 @@ Text GLabel 10600 5050 1    60   Input ~ 0
 26
 Text GLabel 10800 5050 1    60   Input ~ 0
 DIO5
-Text GLabel 6200 1800 0    60   Input ~ 0
+Text GLabel 5700 1150 2    60   Input ~ 0
 34
 Text GLabel 6200 2000 0    60   Input ~ 0
 13
@@ -755,7 +753,7 @@ U 1 1 5BAB795C
 P 9700 5300
 F 0 "J10" H 9700 5700 50  0000 C CNN
 F 1 "Conn_01x07" H 9700 4900 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 9700 5300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9700 5300 50  0001 C CNN
 F 3 "" H 9700 5300 50  0001 C CNN
 	1    9700 5300
 	1    0    0    -1  
@@ -1021,7 +1019,7 @@ U 1 1 5CE2EBFC
 P 3150 4350
 F 0 "J8" H 3250 4250 50  0000 C CNN
 F 1 "Conn_01x02_Female" H 3300 4450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3150 4350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3150 4350 50  0001 C CNN
 F 3 "~" H 3150 4350 50  0001 C CNN
 	1    3150 4350
 	-1   0    0    1   
@@ -1144,17 +1142,6 @@ Wire Wire Line
 	10600 2450 10000 2450
 Wire Wire Line
 	10600 2350 9850 2350
-$Comp
-L Connector:Conn_01x09_Female J14
-U 1 1 5CEA3175
-P 6400 2100
-F 0 "J14" H 6427 2126 50  0000 L CNN
-F 1 "Conn_01x09_Female" V 6600 1800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 6400 2100 50  0001 C CNN
-F 3 "~" H 6400 2100 50  0001 C CNN
-	1    6400 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5250 3450 5250 2950
 Connection ~ 5250 3450
@@ -1393,17 +1380,74 @@ Text GLabel 6200 2500 0    60   Input ~ 0
 V_SWITCH
 Text GLabel 10600 2550 0    60   Input ~ 0
 V_SWITCH
+Wire Wire Line
+	2250 6900 1750 6900
+Text GLabel 6200 1800 0    60   Input ~ 0
+23
 $Comp
-L Connector:Conn_01x11_Female J17
-U 1 1 5CE6122B
+L Connector:Conn_01x10_Female J17
+U 1 1 5CE5762D
 P 10800 2050
-F 0 "J17" H 10827 2076 50  0000 L CNN
-F 1 "Conn_01x11_Female" H 10827 1985 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10800 2050 50  0001 C CNN
+F 0 "J17" H 10827 2026 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 10827 1935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 10800 2050 50  0001 C CNN
 F 3 "~" H 10800 2050 50  0001 C CNN
 	1    10800 2050
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R R9
+U 1 1 5CE5AADE
+P 5400 950
+F 0 "R9" H 5470 996 50  0000 L CNN
+F 1 "R" H 5470 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 5330 950 50  0001 C CNN
+F 3 "~" H 5400 950 50  0001 C CNN
+	1    5400 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5CE6153A
+P 5400 1350
+F 0 "R10" H 5470 1396 50  0000 L CNN
+F 1 "R" H 5470 1305 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 5330 1350 50  0001 C CNN
+F 3 "~" H 5400 1350 50  0001 C CNN
+	1    5400 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L hog32a-rescue:GND #PWR0109
+U 1 1 5CE6162F
+P 5400 1500
+F 0 "#PWR0109" H 5400 1250 50  0001 C CNN
+F 1 "GND" H 5405 1327 50  0000 C CNN
+F 2 "" H 5400 1500 50  0001 C CNN
+F 3 "" H 5400 1500 50  0001 C CNN
+	1    5400 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5400 700  0    60   Input ~ 0
+V_SWITCH
 Wire Wire Line
-	2250 6900 1750 6900
+	5400 800  5400 700 
+Wire Wire Line
+	5400 1100 5400 1150
+Wire Wire Line
+	5400 1150 5700 1150
+Connection ~ 5400 1150
+Wire Wire Line
+	5400 1150 5400 1200
+$Comp
+L Connector:Conn_01x09_Female J14
+U 1 1 5CE770B3
+P 6400 2100
+F 0 "J14" H 6427 2126 50  0000 L CNN
+F 1 "Conn_01x09_Female" H 6427 2035 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x09_P2.54mm_Vertical" H 6400 2100 50  0001 C CNN
+F 3 "~" H 6400 2100 50  0001 C CNN
+	1    6400 2100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
