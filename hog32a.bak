@@ -753,7 +753,7 @@ U 1 1 5BAB795C
 P 9700 5300
 F 0 "J10" H 9700 5700 50  0000 C CNN
 F 1 "Conn_01x07" H 9700 4900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 9700 5300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 9700 5300 50  0001 C CNN
 F 3 "" H 9700 5300 50  0001 C CNN
 	1    9700 5300
 	1    0    0    -1  
@@ -1165,7 +1165,7 @@ U 1 1 5CED0EA7
 P 2750 1800
 F 0 "J2" H 2856 1978 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 3350 1750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
 F 3 "~" H 2750 1800 50  0001 C CNN
 	1    2750 1800
 	1    0    0    -1  
@@ -1215,7 +1215,7 @@ U 1 1 5CE314F3
 P 4500 3100
 F 0 "J16" H 4606 3278 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4100 3050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 3100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4500 3100 50  0001 C CNN
 F 3 "~" H 4500 3100 50  0001 C CNN
 	1    4500 3100
 	1    0    0    -1  

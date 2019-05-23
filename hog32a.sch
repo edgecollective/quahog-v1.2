@@ -263,7 +263,7 @@ U 1 1 5B88BD82
 P 4650 6850
 F 0 "J4" H 4650 7250 50  0000 C CNN
 F 1 "sdcard" H 4650 6450 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x07_Pitch2.54mm" H 4650 6850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 4650 6850 50  0001 C CNN
 F 3 "" H 4650 6850 50  0001 C CNN
 	1    4650 6850
 	1    0    0    -1  
@@ -1165,7 +1165,7 @@ U 1 1 5CED0EA7
 P 2750 1800
 F 0 "J2" H 2856 1978 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 3350 1750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2750 1800 50  0001 C CNN
 F 3 "~" H 2750 1800 50  0001 C CNN
 	1    2750 1800
 	1    0    0    -1  
@@ -1215,7 +1215,7 @@ U 1 1 5CE314F3
 P 4500 3100
 F 0 "J16" H 4606 3278 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4100 3050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4500 3100 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4500 3100 50  0001 C CNN
 F 3 "~" H 4500 3100 50  0001 C CNN
 	1    4500 3100
 	1    0    0    -1  
